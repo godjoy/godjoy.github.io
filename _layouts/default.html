@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="/assets/css/atom-one-light.css">
-    {% if page.title or page.title == 'me' %}
+    {% if page.title or page.title == '' %}
         <title>{{ page.title }}</title>
 		<link rel="stylesheet" type="text/css" href="/assets/css/002.css">
     {% else %}
@@ -33,10 +33,10 @@
 			<ul id="tag-list">
 				<li><a href="/" ><img src="/assets/img/disk.png" />(C:)</a>
 			<ul>
-				{% assign tags = site.tags | sort %}
-				{% for tag in tags %}
-				<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/folder.ico" />{{ tag[0] | replace:'-', ' ' }}</a></li>
-				{% endfor %}
+				<li><a href="/tag/android" title="Android"><img src="/assets/img/folder.ico">android</a></li>
+				<li><a href="/tag/java" title="Java"><img src="/assets/img/folder.ico">java</a></li>
+				<li><a href="/tag/kotlin" title="Kotlin"><img src="/assets/img/folder.ico">kotlin</a></li>
+				<li><a href="/tag/fun" title="Fun"><img src="/assets/img/folder.ico">fun</a></li>
 			</ul>
 				</li>
 			</ul>

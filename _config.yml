@@ -1,9 +1,9 @@
 permalink: /:year:month:day/:title
 url: https://godjoy.github.io/
-baseurl: /project
+baseurl:
 
 # variables
-name: God-Joy
+name: 19971222.exe
 description: S/W Developer, Joy's Blog
 google_verification: null
 
