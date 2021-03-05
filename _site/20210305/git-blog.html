@@ -71,9 +71,9 @@
 			<div class="post_content">
         		<h1 id="git-blog-만들기">Git Blog 만들기</h1>
 
-<p>공부한 내용을 정리하기 위해 블로그를 만들었다.
-velog, naver blog, 티스토리, 브런치 등등 여러가지 플랫폼이 있었지만,
-github에서 한다는 점과 무엇보다 무료 호스팅! 에 끌려서 git blog를 선택했다.
+<p>공부한 내용을 정리하기 위해 블로그를 만들었다.<br />
+velog, naver blog, 티스토리, 브런치 등등 여러가지 플랫폼이 있었지만,<br />
+github에서 한다는 점과 무엇보다 무료 호스팅! 에 끌려서 git blog를 선택했다.<br />
 Git Blog를 만든 기념으로 만드는 방법에 대해 첫 글쓰기📃📃</p>
 
 <h2 id="만들기-전에">만들기 전에</h2>
@@ -88,31 +88,20 @@ Git Blog를 만든 기념으로 만드는 방법에 대해 첫 글쓰기📃📃
 <h2 id="todo">Todo</h2>
 
 <ul>
-  <li>[] git repo 만들기</li>
-  <li>[] ruby 설치</li>
-  <li>[] Jekyll 설치</li>
-  <li>[] local에서 블로그 실행</li>
-  <li>[] jekyll 테마 설정</li>
+  <li>ruby 설치</li>
+  <li>Jekyll 설치</li>
+  <li>jekyll 테마 설정 &amp; git repo 만들기</li>
+  <li>local에서 블로그 실행</li>
 </ul>
-
-<h2 id="git-repo-만들기">git repo 만들기</h2>
-
-<p>github의 무료 호스팅을 받기 위해서는 따를 <strong>규칙</strong>이 있다.</p>
-
-<ol>
-  <li>Repository name을 <strong>username.github.io</strong> 로 만들어야 한다. (e.g. godjoy.github.io)</li>
-  <li>편리함을 위해 Initialize option에 Add a README file을 체크</li>
-  <li>Create repository</li>
-</ol>
-
-<p>완료 후 <strong>clone</strong></p>
 
 <h2 id="ruby-설치">ruby 설치</h2>
 
-<p>Jekyll이 루비로 만들어졌기 때문에, Jekyll을 사용하려면 루비 먼저 깔아야 한다.<br />
-💎<a href="https://rubyinstaller.org/downloads/">ruby 설치 링크</a><br />
-💎💎💎💎💎💎💎💎💎💎💎💎install ruby…💎💎💎💎💎💎💎💎💎💎💎💎(루비다)<br />
-설치 완료되면 ruby -v로 잘 설치가 되었나 체크</p>
+<ul>
+  <li>Jekyll이 루비로 만들어졌기 때문에, Jekyll을 사용하려면 루비 먼저 깔아야 한다.</li>
+  <li><a href="https://rubyinstaller.org/downloads/">ruby 설치 링크</a></li>
+  <li>💎💎💎💎💎💎💎install ruby…💎💎💎💎💎💎💎(루비다)</li>
+  <li>설치 완료되면 ruby -v로 잘 설치가 되었나 체크</li>
+</ul>
 
 <h2 id="jekyll-설치">Jekyll 설치</h2>
 
@@ -121,23 +110,65 @@ Git Blog를 만든 기념으로 만드는 방법에 대해 첫 글쓰기📃📃
   <li>터미널 열고(ctrl + `) Jekyll install</li>
 </ol>
 
-<pre><code>$ gem install jekyll bundler
+<pre><code>$ gem install bundler jekyll
 </code></pre>
+
+<h2 id="테마-설정">테마 설정</h2>
+
+<p>내가 고른 테마는 <a href="https://github.com/h01000110/windows-95">windows95</a></p>
+
+<ul>
+  <li>폴더구조가 마음에 든다! 멋이 난다</li>
+  <li>그러나 인기 많은 테마들에 비해 문서나 이런게 아무 것도 없다..</li>
+  <li>가독성도..그닥이지만 내가 재밌어서 열심히 포스팅 하는게 중요하니까 맘에 드는 테마 쓰기</li>
+</ul>
+
+<p>테마를 골랐으면 github에서 해당 테마를 내 repo로 fork한다.</p>
+
+<h2 id="git-repo-이름-수정">git repo 이름 수정</h2>
+
+<p>github의 무료 호스팅을 받기 위해서는 따를 <strong>규칙</strong>이 있다.</p>
+
+<ul>
+  <li>Repository name을 <strong>username.github.io</strong> 로 만들어야 한다. (e.g. godjoy.github.io)</li>
+  <li>username.github.io를 주소창에 넣으면 내 블로그가 보인다!</li>
+</ul>
+
+<h2 id="_configyml-파일-수정">_config.yml 파일 수정</h2>
+
+<ul>
+  <li>url : https://reponame.github.io/</li>
+  <li>baseUrl: “”</li>
+</ul>
 
 <h2 id="로컬에서-블로그-실행">로컬에서 블로그 실행</h2>
 
-<p>터미널에 서버 실행 명령어를 입력한다.</p>
+<p>매번 git 에 push 해서 수정사항을 확인하는건 지나치게 번거롭다.<br />
+로컬에서 실행시키기 위해 jekyll을 이용한다.</p>
 
-<pre><code>$ jekyll serve
+<ol>
+  <li>git clone</li>
+  <li>visual studio code 실행</li>
+  <li>터미널 열고(ctrl + `) 서버 실행 명령어를 입력한다.</li>
+</ol>
+
+<pre><code>$ bundle exec jekyll serve
 </code></pre>
 
-<p>그 후 “http://127.0.0.1:4000/” 접속하면 내 블로그가 실행된다!</p>
-
 <ul>
-  <li>서버 종료: ctrl + c</li>
+  <li>
+    <p>“http://127.0.0.1:4000/” 접속하면 내 블로그가 실행된다!</p>
+  </li>
+  <li>
+    <p>서버 종료: ctrl + c</p>
+  </li>
 </ul>
 
-<h2 id="테마-설정">테마 설정</h2>
+<h2 id="글작성">글작성</h2>
+
+<ul>
+  <li>_posts 밑에 작성한다</li>
+</ul>
 
 <h2 id="참고">참고</h2>
 
