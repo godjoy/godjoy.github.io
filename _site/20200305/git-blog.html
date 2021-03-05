@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="/assets/css/atom-one-light.css">
+    
+        <title>git blog 만들기</title>
+		<link rel="stylesheet" type="text/css" href="/assets/css/002.css">
+    
+	<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+	<script src="/assets/js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="default_title">
+			<img src="/assets/img/mycomputer.png" />
+			
+				<h1>19971222.exe</h1>
+			
+		</div>
+		<ul class="topbar">
+	<a href="/"><li><u>H</u>ome</li></a>>
+</ul>
+		<div class="tag_list">
+			<ul id="tag-list">
+				<li><a href="/" ><img src="/assets/img/disk.png" />(C:)</a>
+			<ul>
+				<li><a href="/tag/android" title="Android"><img src="/assets/img/folder.ico">android</a></li>
+				<li><a href="/tag/java" title="Java"><img src="/assets/img/folder.ico">java</a></li>
+				<li><a href="/tag/kotlin" title="Kotlin"><img src="/assets/img/folder.ico">kotlin</a></li>
+				<li><a href="/tag/fun" title="Fun"><img src="/assets/img/folder.ico">fun</a></li>
+			</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="post_list">
+			
+				<ul>
+					
+					<li><a href="/20200305/intro" title="fun intro"><img src="/assets/img/file.ico" title="fun intro" />fun intro</a></li>
+					
+					<li><a href="/20200305/git-blog" title="git blog 만들기"><img src="/assets/img/file.ico" title="git blog 만들기" />git blog 만들기</a></li>
+					
+				</ul>
+			
+		</div>
+		<div class="post_total">
+			
+				<div class="left">2 object(s)</div>
+			
+			<div class="right">&nbsp;</div>
+		</div>
+	</div>
+	
+        <div class="content">
+			<div class="post_title">
+				<img src="/assets/img/file.png" />
+				<h1>git blog 만들기</h1>
+				<a href="/"><div class="btn"><span class="fa fa-times"></span></div></a>
+				<div class="btn btn_max"><span class="fa fa-window-maximize"></span></div>
+				<div class="btn"><span class="fa fa-window-minimize"></span></div>
+			</div>
+			<ul class="topbar">
+				<li>March 5, 2020</li>
+			</ul>
+			<div class="post_content">
+        		<h1 id="git-blog-만들기">Git Blog 만들기</h1>
+
+<p>공부한 내용을 정리하기 위해 블로그를 만들었다.
+velog, naver blog, 티스토리, 브런치 등등 여러가지 플랫폼이 있었지만, 
+github에서 한다는 점과 무엇보다 무료 호스팅! 에 끌려서 git blog를 선택했다.
+Git Blog를 만든 기념으로 만드는 방법에 대해 첫 글쓰기📃📃</p>
+
+<h2 id="만들기-전에">만들기 전에</h2>
+<ul>
+  <li>window 환경</li>
+  <li>git 환경 설정과 기반 지식 갖춤</li>
+  <li>visual studio code 설치됨</li>
+  <li><a href="http://jekyllthemes.org/">jekyll에서 테마 보고 옴</a></li>
+</ul>
+
+<h2 id="todo">Todo</h2>
+<ul>
+  <li>[] git repo 만들기</li>
+  <li>[] ruby 설치</li>
+  <li>[] Jekyll 설치</li>
+  <li>[] local에서 블로그 실행</li>
+  <li>[] jekyll 테마 설정</li>
+</ul>
+
+<h2 id="git-repo-만들기">git repo 만들기</h2>
+<p>github의 무료 호스팅을 받기 위해서는 따를 <strong>규칙</strong>이 있다.</p>
+<ol>
+  <li>Repository name을 <strong>username.github.io</strong> 로 만들어야 한다. (e.g. godjoy.github.io)</li>
+  <li>편리함을 위해 Initialize option에 Add a README file을 체크</li>
+  <li>Create repository</li>
+</ol>
+
+<p>완료 후 <strong>clone</strong></p>
+
+<h2 id="ruby-설치">ruby 설치</h2>
+<p>Jekyll이 루비로 만들어졌기 때문에, Jekyll을 사용하려면 루비 먼저 깔아야 한다. <br />
+💎<a href="https://rubyinstaller.org/downloads/">ruby 설치 링크</a>  <br />
+💎💎💎💎💎💎💎💎💎💎💎💎install ruby…💎💎💎💎💎💎💎💎💎💎💎💎(루비다)    <br />
+설치 완료되면 ruby -v로 잘 설치가 되었나 체크</p>
+
+<h2 id="jekyll-설치">Jekyll 설치</h2>
+<ol>
+  <li>visual studio code를 켜고 clone 해둔 git 폴더를 열어준다.</li>
+  <li>터미널 열고(ctrl + `) Jekyll install
+    <pre><code>$ gem install jekyll bundler
+</code></pre>
+  </li>
+</ol>
+
+<h2 id="로컬에서-블로그-실행">로컬에서 블로그 실행</h2>
+<p>터미널에 서버 실행 명령어를 입력한다.</p>
+<pre><code>$ jekyll serve 
+</code></pre>
+<p>그 후 “http://127.0.0.1:4000/” 접속하면 내 블로그가 실행된다!</p>
+<ul>
+  <li>서버 종료: ctrl + c</li>
+</ul>
+
+<h2 id="테마-설정">테마 설정</h2>
+
+<h2 id="참고">참고</h2>
+<p><a href="https://medium.com/fabiancode/github-io-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-with-jekyll-a98c018249a9">참고 블로그</a></p>
+
+
+				
+					<br>
+<hr>
+<br>
+<div class="writer">
+	<p>작성자: GodJoy<br>
+		📧: godjoy@kakao.com
+	</p>
+</div>
+								<!-- 
+					<br>
+<hr>
+<br>
+<div class="donate">
+	<p>Did you like of something here? How about helping me buy some game?<br>
+	I'll appreciate it!</p>
+	<p>Bitcoin Wallet <i class="fa fa-btc"></i> 1Agt7r7aCAeWk5DyXXNyJXAXC4xxysiWjJ<br>Ethereum Wallet <i class="fa fa-money"></i> 0x19BD447c94499BdcA154Dc1BeF9FCf1f4c427C16</p>
+</div>
+				 -->
+			</div>
+		</div>
+    
+	<script src="/assets/js/001.js"></script>
+	<script src="/assets/js/002.js"></script>
+	<div class="footer">
+		<p>Created by <a href="http://github.com/h01000110" target="_blank">h01000110 (hi)</a> | Code licensed under <a href="https://github.com/h01000110/h01000110.github.io/blob/master/LICENSE" target="_blank">MIT License</a></p>
+	</div>
+</body>
+</html>
