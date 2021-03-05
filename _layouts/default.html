@@ -83,7 +83,9 @@
 			</ul>
 			<div class="post_content">
         		{{ content }}
-				<!-- {% if page.title %}
+				{% if page.title %}
+					{% include writer.html %}
+				{% endif %}				<!-- {% if page.title %}
 					{% include donate.html %}
 				{% endif %} -->
 			</div>
